@@ -12,4 +12,4 @@ jobs:
           fetch-depth: 0
       - uses: trufflesecurity/trufflehog@main
         with:
-          extra_args: --results=verified,unverified
+          extra_args: --results=verified,unverified --exclude-paths=.github/trufflehog-exclude.txt
